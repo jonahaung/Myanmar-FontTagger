@@ -13,6 +13,11 @@
 		47E79939237307CC001EE6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E79937237307CC001EE6E0 /* Main.storyboard */; };
 		47E7993B237307CD001EE6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E7993A237307CD001EE6E0 /* Assets.xcassets */; };
 		47E7993E237307CD001EE6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E7993C237307CD001EE6E0 /* LaunchScreen.storyboard */; };
+		47E7994623730814001EE6E0 /* FontsTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7994523730814001EE6E0 /* FontsTagger.swift */; };
+		47E7994923730886001EE6E0 /* TaggedFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7994823730886001EE6E0 /* TaggedFont.swift */; };
+		47E7994B237308AC001EE6E0 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7994A237308AC001EE6E0 /* extensions.swift */; };
+		47E7994E23730DCF001EE6E0 /* zawgyi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47E7994D23730CFA001EE6E0 /* zawgyi.ttf */; };
+		47E7994F23730DD1001EE6E0 /* Pyidaungsu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47E7994C23730CB8001EE6E0 /* Pyidaungsu.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		47E7993A237307CD001EE6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E7993D237307CD001EE6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47E7993F237307CD001EE6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E7994523730814001EE6E0 /* FontsTagger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsTagger.swift; sourceTree = "<group>"; };
+		47E7994823730886001EE6E0 /* TaggedFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedFont.swift; sourceTree = "<group>"; };
+		47E7994A237308AC001EE6E0 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		47E7994C23730CB8001EE6E0 /* Pyidaungsu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pyidaungsu.ttf; sourceTree = "<group>"; };
+		47E7994D23730CFA001EE6E0 /* zawgyi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = zawgyi.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,25 @@
 				47E79931237307CC001EE6E0 /* AppDelegate.swift */,
 				47E79933237307CC001EE6E0 /* SceneDelegate.swift */,
 				47E79935237307CC001EE6E0 /* ViewController.swift */,
+				47E799472373086F001EE6E0 /* FontsTagger */,
 				47E79937237307CC001EE6E0 /* Main.storyboard */,
 				47E7993A237307CD001EE6E0 /* Assets.xcassets */,
 				47E7993C237307CD001EE6E0 /* LaunchScreen.storyboard */,
 				47E7993F237307CD001EE6E0 /* Info.plist */,
 			);
 			path = "Myanmar FontTagger";
+			sourceTree = "<group>";
+		};
+		47E799472373086F001EE6E0 /* FontsTagger */ = {
+			isa = PBXGroup;
+			children = (
+				47E7994D23730CFA001EE6E0 /* zawgyi.ttf */,
+				47E7994C23730CB8001EE6E0 /* Pyidaungsu.ttf */,
+				47E7994523730814001EE6E0 /* FontsTagger.swift */,
+				47E7994823730886001EE6E0 /* TaggedFont.swift */,
+				47E7994A237308AC001EE6E0 /* extensions.swift */,
+			);
+			path = FontsTagger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E7994F23730DD1001EE6E0 /* Pyidaungsu.ttf in Resources */,
 				47E7993E237307CD001EE6E0 /* LaunchScreen.storyboard in Resources */,
+				47E7994E23730DCF001EE6E0 /* zawgyi.ttf in Resources */,
 				47E7993B237307CD001EE6E0 /* Assets.xcassets in Resources */,
 				47E79939237307CC001EE6E0 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E7994623730814001EE6E0 /* FontsTagger.swift in Sources */,
 				47E79936237307CC001EE6E0 /* ViewController.swift in Sources */,
 				47E79932237307CC001EE6E0 /* AppDelegate.swift in Sources */,
+				47E7994923730886001EE6E0 /* TaggedFont.swift in Sources */,
 				47E79934237307CC001EE6E0 /* SceneDelegate.swift in Sources */,
+				47E7994B237308AC001EE6E0 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
